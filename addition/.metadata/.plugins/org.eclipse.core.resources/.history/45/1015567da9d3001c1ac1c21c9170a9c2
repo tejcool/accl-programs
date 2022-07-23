@@ -1,0 +1,74 @@
+package actitime.location;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import utilities.SeleniumUtility;
+
+public class TaskCreation extends SeleniumUtility {
+	WebDriver driver;
+	public TaskCreation(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		
+	}
+	@FindBy(id="container_tasks")
+	private WebElement tasksoption;
+	
+	@FindBy(css=".title.ellipsis")
+	private WebElement addnewButton;
+	
+	@FindBy(css=".item.createNewTasks")
+	private WebElement newTaskOption;
+
+	@FindBy(css=".customerSelector.customerOrProjectSelector.selectorWithPlaceholderContainer>div>div")
+	private WebElement newCustomer;
+	
+	@FindBy(css=".innerContent>div>div>table>tbody>tr>td>div>div>div.scrollableDropdownView>div>div>div>div")
+	private List<WebElement> newCustomerOption;
+	
+	@FindBy(className="newCustomer newCustomerProjectField inputFieldWithPlaceholder")
+	private WebElement  companyName;
+	
+	@FindBy(className="newProject newCustomerProjectField inputFieldWithPlaceholder")
+	private WebElement projectName;
+	
+	@FindBy(xpath="//input[@class='inputFieldWithPlaceholder']")
+	private WebElement passTesting;
+	
+	@FindBy(xpath="//td[@class='billingTypeCell']/div[2]']")
+	private WebElement selectTesting;
+	
+	@FindBy(xpath="//div[text()='Create Tasks']")
+	private WebElement createTaskButton;
+	
+	
+
+	public void getTaskCreation(String company, String project, String field) {
+		clickOnElement(tasksoption);
+		clickOnElement(addnewButton);
+		clickOnElement(newTaskOption);
+		clickOnElement(newCustomer);
+		
+		for(int i=0;i<newCustomerOption.size();i++) {
+			WebElement select1=newCustomerOption.get(i);
+			String textoption1=select1.getText();
+			if(textoption1.equalsIgnoreCase("- New Customer -")) {
+				select1.click();
+			}break;
+		}
+		
+		//clickOnElement(newCustomerOption);
+		typeInput(companyName, company);
+		typeInput(projectName, project);
+		typeInput(passTesting, field);
+		clickOnElement(selectTesting);
+		clickOnElement(createTaskButton);
+	}
+	
+}

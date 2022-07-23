@@ -1,0 +1,40 @@
+package practicing;
+import java.util.ArrayList;
+
+
+public class Arraylist1 {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList	ref =new ArrayList();
+		
+		ref.add(true);
+		ref.add("Komal");
+		ref.add(null);
+		ref.add(1234);
+		ref.add(100000.80);
+	//	ref.add =new Arraylist1();
+		
+		
+		
+		System.out.println("Array list e size"+ref.size());
+		System.out.println("Array list to string or value "+ref);
+		System.out.println("Array list e size**"+ref.get(1));
+	
+		for(int i=0;i<ref.size();i++) {
+			
+			System.out.println("Array list element"+ref.get(i));
+		}
+		
+	for(Object fr:ref ) {
+			System.out.print(fr);
+			
+	}	
+		
+	//	System.out.println("set add"+ref.set(1,"dates"));
+	
+	}
+}
+
+

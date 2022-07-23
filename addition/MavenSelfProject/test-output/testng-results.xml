@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="55471" started-at="2022-05-28T08:55:48Z" finished-at="2022-05-28T08:56:43Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="55471" started-at="2022-05-28T08:55:48Z" finished-at="2022-05-28T08:56:43Z">
+      <class name="actitime.testscript.actiTimeScript">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="startTest" is-config="true" duration-ms="12670" started-at="2022-05-28T14:25:48Z" finished-at="2022-05-28T14:26:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="loginstarttest()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="loginstarttest" is-config="true" duration-ms="515" started-at="2022-05-28T14:26:00Z" finished-at="2022-05-28T14:26:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginstarttest -->
+        <test-method status="PASS" signature="taskpage()[pri:1, instance:actitime.testscript.actiTimeScript@69b2283a]" name="taskpage" duration-ms="12261" started-at="2022-05-28T14:26:01Z" finished-at="2022-05-28T14:26:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskpage -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="logout" is-config="true" duration-ms="2800" started-at="2022-05-28T14:26:13Z" finished-at="2022-05-28T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="loginstarttest()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="loginstarttest" is-config="true" duration-ms="378" started-at="2022-05-28T14:26:16Z" finished-at="2022-05-28T14:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginstarttest -->
+        <test-method status="PASS" signature="deleteTask()[pri:2, instance:actitime.testscript.actiTimeScript@69b2283a]" name="deleteTask" duration-ms="8335" started-at="2022-05-28T14:26:16Z" finished-at="2022-05-28T14:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTask -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="logout" is-config="true" duration-ms="2006" started-at="2022-05-28T14:26:25Z" finished-at="2022-05-28T14:26:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="loginstarttest()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="loginstarttest" is-config="true" duration-ms="406" started-at="2022-05-28T14:26:27Z" finished-at="2022-05-28T14:26:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginstarttest -->
+        <test-method status="PASS" signature="checkIfDeleted()[pri:3, instance:actitime.testscript.actiTimeScript@69b2283a]" name="checkIfDeleted" duration-ms="11265" started-at="2022-05-28T14:26:27Z" finished-at="2022-05-28T14:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfDeleted -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="logout" is-config="true" duration-ms="4399" started-at="2022-05-28T14:26:38Z" finished-at="2022-05-28T14:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:actitime.testscript.actiTimeScript@69b2283a]" name="closeBrowser" is-config="true" duration-ms="422" started-at="2022-05-28T14:26:43Z" finished-at="2022-05-28T14:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- actitime.testscript.actiTimeScript -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

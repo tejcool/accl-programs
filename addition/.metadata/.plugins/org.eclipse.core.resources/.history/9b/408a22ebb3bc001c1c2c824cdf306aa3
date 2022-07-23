@@ -1,0 +1,24 @@
+package selniumAssinmt;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class seleniumAsgnmt {
+
+	public static void main(String[] args) {
+	
+		System.setProperty("webdriver.chrome.driver",".\\executables\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com");
+		String sourcecode= driver.getPageSource();
+		System.out.println("would like to print title of page  "+driver.getTitle() );
+		System.out.println("want the current url of the page  "+driver.getCurrentUrl());
+		//System.out.println("want the sorce code  "+driver.getPageSource());
+		
+		
+		System.out.println("want lenght of the sorcecode "+sourcecode.length());
+		driver.close();
+		
+	}
+
+}

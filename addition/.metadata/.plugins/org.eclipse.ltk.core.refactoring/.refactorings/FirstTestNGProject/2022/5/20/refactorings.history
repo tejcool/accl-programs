@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;utilities&apos; to &apos;java&apos;&#x0D;&#x0A;- Original project: &apos;FirstTestNGProject&apos;&#x0D;&#x0A;- Destination element: &apos;java&apos;&#x0D;&#x0A;- Original element: &apos;FirstTestNGProject/src/utilities&apos;" description="Copy package" element1="/src&lt;utilities" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1652196765527" target="/testMaven/src/main/java" version="1.0"/>
+</session>

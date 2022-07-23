@@ -1,0 +1,34 @@
+package selniumAssinmt;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class SeleniumAsgnmtFcbookD {
+
+	public static void main(String[] args) throws Throwable {
+			
+		System.setProperty("webdriver.chrome.driver", ".\\executables\\chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.get("https://www.facebook.com/");
+			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+			//driver.manage().window().maximize();
+			
+		driver.findElement(By.cssSelector("#u_0_2_2n")).click();
+		WebElement daylist=driver.findElement(By.cssSelector("._5k_5>span>span>select#day"));
+		Select daydropdown=new Select(daylist);
+		daydropdown.isMultiple();
+		//System.out.println("getting the no. of elements present in day= "+daydropdown.);
+		
+		//for(int i=0;i<=pageTitles.size();i++) {
+			
+			
+			
+//		}
+		}
+}
